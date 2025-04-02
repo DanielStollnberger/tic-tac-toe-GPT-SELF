@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,86 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <h1>TIC-TAC-TOE</h1>
+    <div class="winner-div hidden" id="winner-div">
+        </div>
+    <div class="main-div">
+        <!-- Tic-Tac-Toe Felder -->
+        <a href="#" class="cell" onclick="addXOrO('top-left-')">
+            <div class="X hidden" id="top-left-x">
+                <h2>X</h2>
+            </div>
+            <div class="O hidden" id="top-left-o">
+                <h2>O</h2>
+            </div>
+        </a>
+        <a href="#" class="cell" onclick="addXOrO('top-middle-')">
+            <div class="X hidden" id="top-middle-x">
+                <h2>X</h2>
+            </div>
+            <div class="O hidden" id="top-middle-o">
+                <h2>O</h2>
+            </div>
+        </a>
+        <a href="#" class="cell" onclick="addXOrO('top-right-')">
+            <div class="X hidden" id="top-right-x">
+                <h2>X</h2>
+            </div>
+            <div class="O hidden" id="top-right-o">
+                <h2>O</h2>
+            </div>
+        </a>
+        <a href="#" class="cell" onclick="addXOrO('middle-left-')">
+            <div class="X hidden" id="middle-left-x">
+                <h2>X</h2>
+            </div>
+            <div class="O hidden" id="middle-left-o">
+                <h2>O</h2>
+            </div>
+        </a>
+        <a href="#" class="cell" onclick="addXOrO('middle-middle-')">
+            <div class="X hidden" id="middle-middle-x">
+                <h2>X</h2>
+            </div>
+            <div class="O hidden" id="middle-middle-o">
+                <h2>O</h2>
+            </div>
+        </a>
+        <a href="#" class="cell" onclick="addXOrO('middle-right-')">
+            <div class="X hidden" id="middle-right-x">
+                <h2>X</h2>
+            </div>
+            <div class="O hidden" id="middle-right-o">
+                <h2>O</h2>
+            </div>
+        </a>
+        <a href="#" class="cell" onclick="addXOrO('bottom-left-')">
+            <div class="X hidden" id="bottom-left-x">
+                <h2>X</h2>
+            </div>
+            <div class="O hidden" id="bottom-left-o">
+                <h2>O</h2>
+            </div>
+        </a>
+        <a href="#" class="cell" onclick="addXOrO('bottom-middle-')">
+            <div class="X hidden" id="bottom-middle-x">
+                <h2>X</h2>
+            </div>
+            <div class="O hidden" id="bottom-middle-o">
+                <h2>O</h2>
+            </div>
+        </a>
+        <a href="#" class="cell" onclick="addXOrO('bottom-right-')">
+            <div class="X hidden" id="bottom-right-x">
+                <h2>X</h2>
+            </div>
+            <div class="O hidden" id="bottom-right-o">
+                <h2>O</h2>
+            </div>
+        </a>
+    </div>
 </body>
+
 </html>

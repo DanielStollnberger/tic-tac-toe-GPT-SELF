@@ -1,3 +1,108 @@
 *{
     margin: 0;
+    /* border: 1px solid red; */
+}
+
+h1{
+    margin: 20px;
+    color: #9b5815;
+    text-align: center;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D2B48C;
+}
+
+          /* Hauptcontainer */
+          .main-div {
+            height: 75vh;
+            width: 75%;
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        border: 3px solid #8C7853;
+        background-color: #D2B48C;
+        /* Marmorweiß */
+        }
+
+        /* Spielfeld-Quadrate */
+        .cell {
+            text-decoration: none;
+            width: 32.5%;
+            height: 32.5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #B8860B; /* Gold */
+            cursor: pointer;
+            border: 2px solid #8C7853;
+        }
+
+        /* Entferne äußere Ränder für bessere Optik */
+        .cell:nth-child(1), .cell:nth-child(2), .cell:nth-child(3) {
+            border-top: none;
+        }
+        .cell:nth-child(7), .cell:nth-child(8), .cell:nth-child(9) {
+            border-bottom: none;
+        }
+        .cell:nth-child(1), .cell:nth-child(4), .cell:nth-child(7) {
+            border-left: none;
+        }
+        .cell:nth-child(3), .cell:nth-child(6), .cell:nth-child(9) {
+            border-right: none;
+        }
+
+        .cell:hover{
+            background-color: #8C7853;
+            z-index: 100;
+        }
+.X{
+    font-size: 6rem;
+}
+.O{
+    font-size: 6rem;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.winner-div{
+    position: fixed;
+    top: 20vh;
+    left: 20%;
+    right: 20%;
+    height: 60vh;
+    background-color: #8C7853;
+    border: 5px solid #B8860B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+h3{
+    font-size: 40px;
+    color: #D2B48C;
+}
+
+p{
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+    color: #D2B48C;
+}
+
+button{
+    background-color: #D2B48C;
+    cursor: pointer;
 }
