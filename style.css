@@ -66,9 +66,11 @@ body{
         }
 .X{
     font-size: 6rem;
+    color: #9b1515b2;
 }
 .O{
     font-size: 6rem;
+    color: #3b06ae9c;
 }
 
 .hidden{
@@ -105,4 +107,11 @@ p{
 button{
     background-color: #D2B48C;
     cursor: pointer;
+}
+.blue{
+color: #9b1515b2;
+}
+
+.red{
+color: #3b06ae9c;
 }

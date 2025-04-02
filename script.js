@@ -44,20 +44,29 @@ function checkWinner() {
             document.getElementById(condition[2]).classList.contains('hidden') === false) {
             if (document.getElementById(condition[0]).children[0].innerText === document.getElementById(condition[1]).children[0].innerText &&
                 document.getElementById(condition[1]).children[0].innerText === document.getElementById(condition[2]).children[0].innerText) {
-                setTimeout(winnerTemplate, 1000);
+                    let winner = showWinner();
+                setTimeout(() => winnerTemplate(winner), 1000);
                 
             }
         }
     }
 }
 
-function winnerTemplate() {
+function winnerTemplate(winner) {
     document.getElementById('winner-div').classList.remove('hidden');
-    document.getElementById('winner-div').innerHTML = ` <h3>The winner is X</h3>
-                                                        <p>X setzt sich super durch und gewinnt dieses Spiel suverän!</p>
+    document.getElementById('winner-div').innerHTML = ` <h3>The winner is ${winner}</h3>
+                                                        <p>${winner} setzt sich super durch und gewinnt dieses Spiel suverän!</p>
                                                         <button onclick="restartGame()">Neues Spiel</button>`;
 }
 
 function restartGame() {
     location.reload();
+}
+
+function showWinner() {
+    if (currentPlayer % 2 === 0) {
+       return '<b class="blue">X</b>';
+    } else {
+        return '<b class="red">O</b>';
+    }
 }
