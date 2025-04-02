@@ -95,6 +95,7 @@ body{
 h3{
     font-size: 40px;
     color: #D2B48C;
+    text-align: center;
 }
 
 p{
@@ -114,4 +115,23 @@ color: #9b1515b2;
 
 .red{
 color: #3b06ae9c;
+}
+
+@media (max-width: 450px){
+   .cell {
+    width: 30.5%;
+    height: 30.5%;
+}
+.main-div{
+    height: 50vh;
+    width: 75%;
+}
+.X{
+    font-size: 5rem;
+   
+}
+.O{
+    font-size: 5rem;
+    
+}
 }
